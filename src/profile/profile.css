@@ -17,16 +17,19 @@ p {
 	line-height: 21px;
 }
 
+.centered {
+  height: 100vh;
+  display: flex;
+}
+
 .card-container {
-  top: 0;
-  left: 0;
 	background-color: #fff5b2;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	position: relative;
-	width: 450px;
-	max-width: 100%;
-	text-align: center;
+	max-width: 450px;
+  text-align: center;
+  margin: auto;
 }
 
 .skills {
@@ -59,19 +62,6 @@ p {
   transform: scale(2);
 }
 
-.profile-img {
-  height: 100px;
-  width: 100px;
-  background: url('https://images.unsplash.com/photo-1504933350103-e840ede978d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  border-radius: 50%;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-
 .avatar-container {
   vertical-align: middle;
   border-radius: 50%; /* relative value */
@@ -100,10 +90,6 @@ p {
   border-top: 1px dashed  #000000;
 }
 
-.icons .icons-header {
-  
-}
-
 .icons img {
   width: 50px;
   height: 50px;
@@ -112,4 +98,42 @@ p {
 
 .introduction-text {
   padding: 15px;
+}
+
+/* Mobile Phones Portrait or Landscape */
+@media screen and (max-device-width: 768px){
+  .avatar-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .avatar-container {
+    margin-top: 0px;
+  }
+}
+
+/*  Tablets Portrait or Landscape  */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  .avatar-container img {
+    width: 150px;
+    height: 150px;
+  }
+  .avatar-container {
+    margin-top: -75px;
+  }
+}
+
+@media (max-device-height: 667px){
+  .avatar-container {
+    display: none
+  }
+}
+
+@media (max-device-height: 768px){
+  .avatar-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .avatar-container {
+    margin-top: -50px;
+  }
 }

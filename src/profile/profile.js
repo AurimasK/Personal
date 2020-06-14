@@ -37,7 +37,7 @@ function profile() {
           </ul>
         </div>
         <div className="icons">
-          <h6 className="icons-header">Contact me</h6>
+          <h6>Contact me</h6>
           <a href="mailto:aurimas@kancavicius.lt">
             <img alt="Email" src={mailIcon} />
           </a>
@@ -55,6 +55,3 @@ function profile() {
 }
 
 export default profile;
-
-
-
